@@ -1,0 +1,19 @@
+<%= form_for @market do |f| %>
+  
+  <h4>Enter either address or coordinates</h4>
+  
+  <fieldset class="form-group">
+    <%= f.label :title %>
+    <%= f.text_field :title, class: "form-control" %>
+    
+    <%= f.label :raw_address, 'Address' %>
+    <%= f.text_field :raw_address, class: "form-control" %>
+    <small class="text-muted">You can also enter IP. Your IP is <%= request.ip %></small>
+  </fieldset>
+
+  
+
+
+  
+  <%= f.submit 'Add!', class: 'btn btn-primary' %>
+<% end %>

@@ -1,0 +1,7 @@
+<header><h1 class="display-4"><%= @market.title %></h1></header>
+
+<p>Address: <%= @market.address %></p>
+<p>Coordinates: <%= @market.latitude %> <%= @market.longitude %></p>
+
+<%= image_tag "http://maps.googleapis.com/maps/api/staticmap?center=#{@market.latitude},#{@market.longitude}&markers=#{@market.latitude},#{@market.longitude}&zoom=16&size=640x400&key=AIzaSyA4BHW3txEdqfxzdTlPwaHsYRSZbfeIcd8",
+              class: 'img-fluid img-rounded', alt: "#{@market.title} on the map"%>

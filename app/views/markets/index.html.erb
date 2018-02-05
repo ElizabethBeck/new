@@ -1,0 +1,18 @@
+<div class="center jumbotron">
+  <h1>Welcome to the Farm App</h1>
+
+<%= link_to 'Add market', new_market_path, class: 'btn btn-default btn-lg' %>
+
+<h3> Farmers Markets near Alamance County: </h3>
+<iframe src="https://www.google.com/maps/d/embed?mid=1NvpD5LdKohkg7h7APqnxij5VRBLh9JWL" width="640" height="480"></iframe>
+
+
+<div class="card">
+  <div class="card-block">
+    <ul>
+      <%= render @markets %>
+    </ul>
+  </div>
+</div>
+
+</div>
